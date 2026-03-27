@@ -13,6 +13,19 @@ pub use constants::*;
 pub use instructions::*;
 pub use state::*;
 
+#[allow(unused_imports)]
+use solana_security_txt::security_txt;
+
+#[cfg(not(feature = "no-entrypoint"))]
+security_txt! {
+    name: "HouseFlip",
+    project_url: "https://analogy.games",
+    contacts: "email:anallergytoanalogy@gmail.com, twitter:@cashtagyolo",
+    policy: "https://github.com/AnAllergyToAnalogy/house-flip/blob/main/SECURITY.md",
+    preferred_languages: "en",
+    source_code: "https://github.com/AnAllergyToAnalogy/house-flip"
+}
+
 declare_id!("E2KAtVvm2N5otMYLwXXGySP9ZGEf7aRy4BDarajw3eJa");
 
 #[program]
