@@ -12,7 +12,7 @@ house_flip = "E2KAtVvm2N5otMYLwXXGySP9ZGEf7aRy4BDarajw3eJa"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "mainnet"
 wallet = "~/.config/solana/id-old.json"
 
 [scripts]
